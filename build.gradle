@@ -35,7 +35,7 @@ dependencies {
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 	implementation 'com.google.cloud:google-cloud-texttospeech:2.31.0'
 	implementation 'com.google.cloud:google-cloud-speech:4.56.0'
-}
+	implementation 'org.jsoup:jsoup:1.15.3'
 
 tasks.named('test') {
 	useJUnitPlatform()
