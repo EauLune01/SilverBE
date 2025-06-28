@@ -1,9 +1,11 @@
 package likelion.silver.domain;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
 import lombok.*;
 
 @Entity
+@Table(name = "users")  // 테이블 이름을 "users"로 지정
 @Getter
 @Setter
 @Builder
@@ -20,11 +22,6 @@ public class User {
     private String nickname;  // 예: "임영웅", "팬1", "팬2"
 
     @Column(nullable = false)
-    private boolean isIdol;   // true면 아이돌(임영웅), false면 팬
+    private boolean idol; // ✅ 이름 변경: isIdol → idol
 
-    // 생성자 예시
-    public User(String nickname, boolean isIdol) {
-        this.nickname = nickname;
-        this.isIdol = isIdol;
-    }
 }
