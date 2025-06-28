@@ -39,4 +39,5 @@ out/
 .env
 
 data/
-src/main/resources/trusty-ether-464304-m7-1396e2dd17f0.json
+src/main/resources/trusty-ether-464304-m7-1396e2dd17f0.jsonsrc/main/resources/*.json
+src/main/resources/*.json
