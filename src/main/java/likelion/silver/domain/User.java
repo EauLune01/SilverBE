@@ -24,4 +24,5 @@ public class User {
     @Column(nullable = false)
     private boolean idol; // ✅ 이름 변경: isIdol → idol
 
+
 }
