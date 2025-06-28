@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: side-project-blog
+
+  datasource:
+    url: jdbc:h2:file:./data/chatdb   # ⬅️ 파일 모드 (DB 파일 생성됨)
+    driver-class-name: org.h2.Driver
+    username: silver
+    password: silver
+
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.H2Dialect
+        format_sql: true
+        show_sql: true
+
+openai:
+  api:
+    key: ${OPENAI_API_KEY}
