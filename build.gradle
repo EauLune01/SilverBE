@@ -21,6 +21,7 @@ configurations {
 
 repositories {
 	mavenCentral()
+	maven { url "https://maven.google.com" }
 }
 
 dependencies {
@@ -32,10 +33,9 @@ dependencies {
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
-
-		implementation 'org.jsoup:jsoup:1.15.3'
-
-}
+	implementation 'com.google.cloud:google-cloud-texttospeech:2.31.0'
+	implementation 'com.google.cloud:google-cloud-speech:4.56.0'
+	implementation 'org.jsoup:jsoup:1.15.3'
 
 tasks.named('test') {
 	useJUnitPlatform()

@@ -26,3 +26,6 @@ spring:
 openai:
   api:
     key: ${OPENAI_API_KEY}
+google:
+  credentials:
+    location: classpath:trusty-ether-464304-m7-1396e2dd17f0.json
